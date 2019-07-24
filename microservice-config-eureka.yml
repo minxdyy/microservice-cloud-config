@@ -20,9 +20,6 @@ eureka:
   server:
     enable-self-preservation: false  #  禁用自我保护模式
 ---
-spring:
-  profiles:
-    active: prod # 激活开发环境配置
 server:
   port: 6001 #端口号
 spring:
