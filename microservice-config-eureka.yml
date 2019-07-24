@@ -3,7 +3,11 @@ spring:
   profiles:
     active: dev # 激活开发环境配置
 server:
-  port: 6001    #  服务端口
+  port: 6001 #端口号
+spring:
+  profiles: dev # 开发环境
+  application:
+    name: microservice-config-eureka
   
 eureka:
   instance:
@@ -20,7 +24,11 @@ spring:
   profiles:
     active: prod # 激活开发环境配置
 server:
-  port: 6001    #  服务端口
+  port: 6001 #端口号
+spring:
+  profiles: prod # 开发环境
+  application:
+    name: microservice-config-eureka
   
 eureka:
   instance:
